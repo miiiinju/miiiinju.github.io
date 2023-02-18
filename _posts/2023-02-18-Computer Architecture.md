@@ -1,3 +1,11 @@
+---
+title:  "컴퓨터 구조"
+excerpt: " "
+
+categories:
+  - CS
+---
+
 # 중간
 
 2주 1차시
