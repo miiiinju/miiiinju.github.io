@@ -51,9 +51,11 @@ embedded나 desktop에 따라 performance metric이 달라질 수 있음
 ### Defining Performance
 
 performance를 최대화하기 위해선 execution time을 최소화해야함
+
 ![Untitled](https://user-images.githubusercontent.com/111269144/219854766-d9561116-a686-4ee4-838d-be631a4e67ca.png)
 
 X가 Y보다 n배 빠르다고 할 때
+
 ![Untitled 1](https://user-images.githubusercontent.com/111269144/219854774-ff270c20-e091-4373-a3e3-900de3550546.png)
 
 
@@ -68,6 +70,7 @@ System Performance를 정의함
 **CPU time**
 
 주어진 작업을 processing하는데 드는 시간
+
 ![Untitled 2](https://user-images.githubusercontent.com/111269144/219854782-ec7fa13c-6196-424a-b87d-946e64631a0a.png)
 
 
@@ -82,6 +85,7 @@ number of **CPU clock cycles**
 명령어마다 실행 시간이 달라서 평균으로
 
 ![Untitled 3](https://user-images.githubusercontent.com/111269144/219854791-c9d69c88-5ca7-40a6-ade9-a1a4a88a7df1.png)
+
 ![Untitled 4](https://user-images.githubusercontent.com/111269144/219854794-0019cd0f-e476-41f6-98fd-d62f1e3d470d.png)
 
 clock 수 = IC*CPI
@@ -111,6 +115,7 @@ CPI(평균)
 같은 프로그램,CPU, 다른 컴파일러 → IC 다르고, 평균 CPI바뀌나?
 
 ---
+
 ![Untitled 5](https://user-images.githubusercontent.com/111269144/219854802-de20fbe4-1548-47e5-9db7-ef722dce6697.png)
 
 ![Untitled 6](https://user-images.githubusercontent.com/111269144/219854803-fb339167-d610-4537-91dd-3a5aa1168afb.png)
