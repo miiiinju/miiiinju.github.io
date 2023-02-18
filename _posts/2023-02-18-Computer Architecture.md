@@ -52,11 +52,11 @@ embedded나 desktop에 따라 performance metric이 달라질 수 있음
 
 performance를 최대화하기 위해선 execution time을 최소화해야함
 
-![Untitled](2023-02-18-Computer Architecture/Untitled.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled.png)
 
 X가 Y보다 n배 빠르다고 할 때
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 1.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 1.png)
 
 ### Execution Time 측정
 
@@ -70,7 +70,7 @@ System Performance를 정의함
 
 주어진 작업을 processing하는데 드는 시간
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 2.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 2.png)
 
 →      $clock\_cycle\_time = 1/clock\_rate$ (Time = 1/frequency)
 
@@ -82,9 +82,9 @@ number of **CPU clock cycles**
 
 명령어마다 실행 시간이 달라서 평균으로
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 3.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 3.png)
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 4.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 4.png)
 
 clock 수 = IC*CPI
 
@@ -114,13 +114,13 @@ CPI(평균)
 
 ---
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 5.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 5.png)
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 6.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 6.png)
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 7.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 7.png)
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 8.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 8.png)
 
 ******ISA******
 
@@ -154,7 +154,7 @@ not을 nor로
 
 제한된 3가지 명령 형식
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 9.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 9.png)
 
 알고리즘은 operation 개수 결정
 
@@ -238,7 +238,7 @@ ISA가 복잡하면 하드웨어, 컴파일러 처리 과정도 복잡해짐
 
 ## MIPS Arithmetic Instruction
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 10.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 10.png)
 
 - 각 산술연산 명령어는 하나의 명령어 연산을 사용 - RISC
 - 각 피연산**(operand)**는 **datapath의 register file**에 포함되어 있음
@@ -257,11 +257,11 @@ ISA가 복잡하면 하드웨어, 컴파일러 처리 과정도 복잡해짐
     </aside>
     
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 11.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 11.png)
 
 - Arithmetic Instruction은 **명령어 포맷 R**에 해당함
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 12.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 12.png)
 
 - **산술 연산의 opcode : 0**
 
@@ -269,7 +269,7 @@ ISA가 복잡하면 하드웨어, 컴파일러 처리 과정도 복잡해짐
 
 ## MIPS 명령어 필드 (R type)
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 13.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 13.png)
 
 레지스터 R0 ~ R31 : 32개
 
@@ -293,7 +293,7 @@ opcode에 augmenting(덧붙여짐)
 
 - 레지스터를 모아놓은 저장소 (R0 ~ R31) (32bit 레지스터 32개)
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 14.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 14.png)
 
 동시에 **두 개의 레지스터를 읽을 수 있고**, **하나의 레지스터에 쓸 수 있음 (read port, write port)**
 
@@ -314,13 +314,13 @@ opcode에 augmenting(덧붙여짐)
 
 0,1은 사용 빈도가 높기 때문에 특성 레지스터는 해당 값을 가지도록 만들어둠
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 15.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 15.png)
 
 ## 레지스터 vs. 메모리
 
 **산술 연산 피연산자는 must be in registers**
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 16.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 16.png)
 
 ## 프로세서 - 메모리 Interconnection
 
@@ -332,7 +332,7 @@ opcode에 augmenting(덧붙여짐)
 
  
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 17.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 17.png)
 
 4byte = 1 words, 1 word 단위로 읽고 쓰기를 함
 
@@ -361,11 +361,11 @@ memory base address 주소 **A**
 
 offset value **B** → **A + B**
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 18.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 18.png)
 
 offset : 16bit
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 19.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 19.png)
 
 16-bit offset은 base 주소에서 위로 2^15개, 아래로 2^15개로 하여 접근
 
@@ -373,13 +373,13 @@ offset : 16bit
 
 ## MIPS 메모리 Addressing
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 20.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 20.png)
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 21.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 21.png)
 
 $s3의 경우 직접 주소가 아니라 포인터 처럼 간주되는 것 같음??
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 22.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 22.png)
 
 # 9월 28일
 
@@ -387,13 +387,13 @@ $s3의 경우 직접 주소가 아니라 포인터 처럼 간주되는 것 같�
 
 ## 가변 Array Index
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 23.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 23.png)
 
 index가 1 증가할 때마다 4씩 커짐 →
 
 c = A[i] -b = 4*i +$s4 -b($s1)
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 24.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 24.png)
 
 더하기 연산자 2개를 이용하여 곱하기 연산자를 구현
 
@@ -432,15 +432,15 @@ MIPS, HP PA-RISC, …
 
 큰 자릿수부터 쓰는 거(일상적으로 쓰는 순서)
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 25.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 25.png)
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 26.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 26.png)
 
 ## Loading and Storing ‘Bytes’
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 27.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 27.png)
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 28.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 28.png)
 
 word 단위가 아니고 byte 단위이기 때문에
 
@@ -461,19 +461,19 @@ $t0는 32bit 레지스터
 
 </aside>
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 29.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 29.png)
 
 앞에 24bit는? zero-extends, or 부호 고려
 
 offset 6인 경우에는?
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 30.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 30.png)
 
 **MIPS에서 레지스터 0으로 초기화할때 add $s3, $zero, $zero 사용 ($zero, 0번 레지스터는 0 hard wired)**
 
 ## Loading and Storing ‘Half Words’
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 31.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 31.png)
 
 rightmost 16비트에 load하고 store, 나머지는 손 대지 않는다
 
@@ -485,7 +485,7 @@ Small constants(작은 상수) 연산이 빈번히 사용됨
 
 - 다수의 프로그램에서 연산의 50%정도를 차지 - Common case
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 32.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 32.png)
 
 **Solutions??**
 
@@ -495,7 +495,7 @@ Small constants(작은 상수) 연산이 빈번히 사용됨
 
 상수를 명령어에 넣어두기?
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 33.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 33.png)
 
 ### 상수 포함 명령어
 
@@ -503,7 +503,7 @@ Small constants(작은 상수) 연산이 빈번히 사용됨
 
 - instruction과 함께 따라옴
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 34.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 34.png)
 
 산술 연산을 위해 **sign extension**
 
@@ -521,7 +521,7 @@ Small constants(작은 상수) 연산이 빈번히 사용됨
 
 ### MIPS Immediate Instruction
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 35.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 35.png)
 
 16bit Immediate 포맷 limit 값은 2^15-1 to -2^15
 
@@ -552,7 +552,7 @@ ori는 or immediate
 
 (Load를 안 쓰는 이유는, 아마 load하면 zero extension을 하여 저장하기 때문이 아닐까?)
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 36.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 36.png)
 
 ---
 
@@ -564,7 +564,7 @@ ori는 or immediate
 
 상수는 있지만, **R type format** (shamt 자리에 들어감)
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 37.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 37.png)
 
 shamt field는 5-bit로 충분, 2^5 = 32, 32bit만큼 이동할 수 있음
 
@@ -578,7 +578,7 @@ does not use rs field,
 
 sign bit가 shift되어 들어옴 (MSB bit가 shifted in됨)
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 38.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 38.png)
 
 ### and/or/nor (bit-wise)
 
@@ -598,7 +598,7 @@ a NOR b == NOT(a OR b)
 
 **0과 NOR하면 same as NOT operation**
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 39.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 39.png)
 
 NOT operation쓰는 것 보다 $zero를 사용하는 게 더 빠름
 
@@ -612,11 +612,11 @@ bne : branch not equal 같지 않으면 branch
 
 beq : branch equal 같으면 branch
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 40.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 40.png)
 
 **label은 주소 값을 가지고 있는 것임(번지 기준 offset 얼마 더할 지에 대해)**
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 41.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 41.png)
 
 **Label field is immediate**
 
@@ -630,7 +630,7 @@ I-type의 offset field의 사용예 (산술 계산)
 - Immediate constant value (which is contained in instruction itself)
 - Branch offset for target (branch distance)
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 42.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 42.png)
 
 → **이 3가지 케이스는 sign extension을 필요로함**
 
@@ -652,13 +652,13 @@ branch offset에 32bit sign extension이후 pc와 계산
 
 **Set on less than instruction - slt**
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 43.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 43.png)
 
  
 
 ## (Pseudo) Implementation of more branch Instruction - (blt, ble, bgt, bge)
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 44.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 44.png)
 
 이거랑 달리 관계 beq bne 반대로 해야 if문 조건 수행하기 편한듯?
 
@@ -701,7 +701,7 @@ j Lbl #go to Lb1
 
 ### J format
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 45.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 45.png)
 
 Jump 목적지 주소는 어떻게?
 
@@ -711,7 +711,7 @@ shift 두 칸 한 뒤에
 
 branch처럼 더하고 뺴고가 아니라 **해당 주소로 가는 것** 
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 46.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 46.png)
 
 앞에 4비트는 제외하고 아래에는 override
 
@@ -721,7 +721,7 @@ branch처럼 더하고 뺴고가 아니라 **해당 주소로 가는 것**
 
 branch할 때 16bit offset으로 못 갈 때에도 J type을 사용할 수 있음
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 47.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 47.png)
 
 대신 IC는 증가
 
@@ -732,7 +732,7 @@ branch할 때 16bit offset으로 못 갈 때에도 J type을 사용할 수 있�
 
  
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 48.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 48.png)
 
 Branch할 떄 offset 설정 부분에서
 
@@ -748,7 +748,7 @@ $t1 레지스터에 있는 값 (주소) 로 jump함
 
 일반 jump는 pc에 offset을 override했지만, 
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 49.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 49.png)
 
 jr : jump register (register is 32bit) - R format
 
@@ -801,7 +801,7 @@ main함수가 func a를 호출하면 → main이 **caller**, a가 **callee**
 
 **jump and link**
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 50.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 50.png)
 
 **$ra**는 **복귀주소**를 가지고 있는 **레지스터**
 
@@ -812,7 +812,7 @@ main함수가 func a를 호출하면 → main이 **caller**, a가 **callee**
 
 **jump and return**
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 51.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 51.png)
 
 **$ra**가 붙어서 들어감 (31) rs field만 쓰는듯?
 
@@ -836,7 +836,7 @@ ex) 4 arguments  and 2 return value가 필요한 상황
 
 high addr부터 low addr로 grow to lower address
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 52.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 52.png)
 
 → 그래서 파라미터의 수가 증가하면 execution time이 증가함
 
@@ -848,7 +848,7 @@ $t레지스터는 굳이  preserved on call no라서 callee가 저장할 필요�
 
 $s가 아래와 같이 해야하는 레지스터
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 53.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 53.png)
 
 ### Stack
 
@@ -858,7 +858,7 @@ $fp와 $sp 사이를 해당 함수 범위를 나타내는 기준
 
 $fp는 **base(거꾸로 자라니깐?),** $sp는 top
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 54.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 54.png)
 
 **Saved arguement registers(if any)**
 
@@ -872,7 +872,7 @@ $fp가 저장됨,  이전의 stack top으로 돌아가기 위해
 
 위 상황에서 i+j를 k 로컬 변수에 저장할 수도 있으니깐?
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 55.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 55.png)
 
 **$fp**
 
@@ -894,7 +894,7 @@ $sp를 update해야함 (stack 증가하니깐)
 
 ## $gp (global pointer - static, dynamic data)
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 56.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 56.png)
 
 **상수**나 **배열**, **전역변수**과 같은 static data segment는 static data에 저장됨($gp가 마지막 주소를 가리킴)
 
@@ -926,7 +926,7 @@ ex) immediate instruction
 
 피연산자는 레지스터에 가면 있음
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 57.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 57.png)
 
 ### Base(변위) addressing
 
@@ -934,7 +934,7 @@ base register에 offset만큼 더하여 **메모리**에 접근
 
 ex) load/store 명령
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 58.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 58.png)
 
 rs : **base**
 
@@ -958,7 +958,7 @@ ex) branch
 
 PC에다 offset을 더하여 (signed)
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 59.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 59.png)
 
 ### Pseudo-direct addressing
 
@@ -966,7 +966,7 @@ ex) jump
 
 2비트 0붙이고, 위에 4비트는 그대로 있고 막 그런
 
-![Untitled](2023-02-18-Computer Architecture/Untitled 60.png)
+![Untitled](assets/2023-02-18-Computer Architecture/Untitled 60.png)
 
 ---
 
